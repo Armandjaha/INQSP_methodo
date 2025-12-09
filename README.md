@@ -1,6 +1,6 @@
 # INQSP – Methodological Demonstration (Simplified Reproducible Version)
 
-This repository provides a simplified and reproducible demonstration of the statistical methodology used to construct Côte d’Ivoire’s first **National Public Service Quality Index (INQSP)**.  
+This repository provides a simplified and reproducible demonstration of the statistical methodology used to construct Côte d’Ivoire’s first **National Public Service Quality Index (INQSP)**. The INQSP was developed by the Observatoire du Service Public (OSEP), the national structure responsible for strategic monitoring and decision-making support aimed at improving public service quality and user satisfaction.
 All examples use **synthetic data**, and the repository does *not* include any confidential or official National Public Service Quality Survey (ENQSP) datasets.
 
 This demonstration follows the scientific standards of the **OECD–JRC Handbook on Composite Indicators (2005)** and applied governance measurement frameworks such as **(Mothupl, Man, Tabana, & Knight, 2021)** and **OxCGRT**.
