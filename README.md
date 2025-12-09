@@ -100,6 +100,6 @@ The INQSP is used as a national decision-support tool for:
 
 ---
 
-## 📄 License
+##  License
 
 Distributed under the **MIT License** to encourage reproducibility and academic reuse.
