@@ -76,6 +76,8 @@ Details are presented in the technical appendix↓
 ## Author and Methodological Contribution
 
 **Armand Djaha, M.Sc. Applied Economist**
+a.djaha@stat.plan.gouv.ci
+armandjaha@gmail.com
 
 Lead methodological contributor to the INQSP:
 
