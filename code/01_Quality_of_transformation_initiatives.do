@@ -1,6 +1,5 @@
 /*************************************************************************************************
  Structured Dimension Analysis – Quality Index (INQSP)
-ANStat
 (August 2025, by Armand Djaha, Msc)
 *************************************************************************************************
 */
@@ -207,6 +206,7 @@ list, noobs clean
 
 * Export 
 export excel using "$OUT\indice_global_matrice_Harmean.xlsx",sheet("INDICE 1") firstrow(variables) replace
+
 
 
 
