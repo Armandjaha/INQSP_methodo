@@ -4,8 +4,42 @@ All data are simulated  for educational purposes. The views expressed here are p
 and do not represent ANStat, OSEP, or any public institution. No confidential or proprietary data are included.
 
 
-## How to run
-1. Put simulated datasets in `data/`
-2. Run Stata do-files from the repository root:
-   - `do code/... .do`
-Outputs are saved in `output/`.
+## Code Structure – INQSP Methodology Demo
+This folder contains the full Stata pipeline used to compute a simplified and reproducible version of the Public Service Quality Index (INQSP).
+All scripts are written using relative paths to ensure portability and reproducibility across systems.
+
+File Structure
+00_setup.do
+
+Initializes the working environment:
+Defines global paths (data, output, code)
+Creates output subfolders
+Ensures Stata is launched from the repository root
+This script must be executed before any analytical file.
+
+00_master.do
+
+Master execution file:
+Calls 00_setup.do
+Executes analytical scripts in the correct order
+Produces final outputs
+Recommended entry point for full replication.
+
+01_Quality_of_transformation_initiatives.do
+
+Computes:
+
+Sub-index 1: Existence of operational mechanisms
+Sub-index 2: Appropriation of the “Fonctionnaire Nouveau” concept
+Final index 1  (equal weighting)  
+
+02_Quality_of_services_received.do
+
+
+...
+
+
+
+Technical Requirements
+Stata 17 or higher
+No external packages required
