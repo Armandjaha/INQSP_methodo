@@ -79,13 +79,6 @@ Details are presented in the technical appendix↓
 a.djaha@stat.plan.gouv.ci
 armandjaha@gmail.com
 
-**Observatoire du Service Public de Côte d'Ivoire(OSEP)**
-milie@osep.gouv.ci
-
-**LUCIEN KOUAKOU,head of OSEP**
-lvkosep@gmail.com
-lucien.kouakou@osep.gouv.ci
-
 Lead methodological contributor to the INQSP:
 
 - Design of the statistical framework  
@@ -94,6 +87,15 @@ Lead methodological contributor to the INQSP:
 - Psychometric validation and robustness testing  
 - Drafting of the methodological note for national institutions  
   (including the **Conseil des Ministres**)
+
+
+**Observatoire du Service Public de Côte d'Ivoire(OSEP)**
+milie@osep.gouv.ci
+
+**LUCIEN KOUAKOU,head of OSEP**
+lvkosep@gmail.com
+lucien.kouakou@osep.gouv.ci
+
 
 ---
 
