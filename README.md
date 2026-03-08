@@ -33,7 +33,7 @@ The INQSP measures public service quality across several latent dimensions, typi
 These dimensions aggregate indicators from multiple population groups (users, agents, initiative leaders, decision-makers).
 
 A full conceptual diagram will be added here:
-![INQSP conceptual framework](methodology/INQSP_conceptual_framework.png)
+![INQSP conceptual framework](methodology/inqsp_conceptual_framework.png)
 
 ---
 
