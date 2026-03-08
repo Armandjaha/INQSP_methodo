@@ -172,8 +172,5 @@ replace LABEL = "DIMENSION 4" in 5
 
 list LABEL TITLE SCORE, noobs
 
-export excel using "$OUT\indice_global_matrice_Harmean.xlsx", ///
-    sheet("INQSP") ///
-    firstrow(variables) ///
+export excel using "$OUT\indice_global_matrice_Harmean.xlsx",sheet("INQSP") firstrow(variables) sheetmodify
 
-    sheetmodify
