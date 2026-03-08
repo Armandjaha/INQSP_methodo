@@ -154,11 +154,11 @@ if sheet=="INDICE 4"
  SECTION 9 — FINAL TABLE FORMAT
 **************************************************************************************************/
 
-rename sheet Label
+rename sheet LABEL
 rename full_label TITLE
 rename score SCORE
 
-order Label TITLE SCORE
+order LABEL TITLE SCORE
 
 replace LABEL = "DIMENSION 1" in 2
 replace LABEL = "DIMENSION 2" in 3
@@ -175,4 +175,5 @@ list LABEL TITLE SCORE, noobs
 export excel using "$OUT\indice_global_matrice_Harmean.xlsx", ///
     sheet("INQSP") ///
     firstrow(variables) ///
+
     sheetmodify
