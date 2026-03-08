@@ -47,7 +47,7 @@ do "code/00_setup.do"
  SUB-INDEX 1 — WORKING CONDITIONS OF FRONTLINE STAFF
 **************************************************************************************************/
 
-use "$ROOT\AGENTS_PRESTATAIRES\frontline_workers", clear
+use "$ROOT\frontline_workers", clear
 
 
 /**************************************************************************************************
@@ -486,3 +486,4 @@ replace score = score * 100
 export excel using "$OUT\indice_global_matrice_Harmean.xlsx", ///
 
 sheet("INDICE 3") firstrow(variables) sheetmodify
+
