@@ -1,45 +1,150 @@
 ## Disclaimer
-This repository is a **simplified** and reproducible demonstration of a methodology.
-All data are simulated  for educational purposes. The views expressed here are personal
-and do not represent ANStat, OSEP, or any public institution. No confidential or proprietary data are included.
+
+This repository is a **simplified and fully reproducible demonstration** of a methodology used to construct a composite index of public service quality.
+
+All datasets included in this repository are **simulated data created solely for educational and methodological purposes**. No confidential or administrative data from ANStat, OSEP, or any public institution are used.
+
+The views expressed in this repository are **strictly personal and academic** and do not represent the official position of ANStat, OSEP, or any governmental institution.
+
+This repository aims to illustrate a **transparent and reproducible statistical pipeline** for building a composite public service quality index.
 
 
 ## Code Structure – INQSP Methodology Demo
-This folder contains the full Stata pipeline used to compute a simplified and reproducible version of the Public Service Quality Index (INQSP).
-All scripts are written using relative paths to ensure portability and reproducibility across systems.
 
-File Structure
-00_setup.do
+This folder contains the **complete Stata pipeline** used to compute a simplified and reproducible version of the **Public Service Quality Index (INQSP)**.
 
-Initializes the working environment:
-Defines global paths (data, output, code)
-Creates output subfolders
-Ensures Stata is launched from the repository root
-This script must be executed before any analytical file.
+The pipeline follows a structured approach based on:
 
-00_master.do
+- dimension construction
+- indicator aggregation
+- composite index computation
 
-Master execution file:
-Calls 00_setup.do
-Executes analytical scripts in the correct order
-Produces final outputs
-Recommended entry point for full replication.
-
-01_Quality_of_transformation_initiatives.do
-
-Computes:
-
-Sub-index 1: Existence of operational mechanisms
-Sub-index 2: Appropriation of the “Fonctionnaire Nouveau” concept
-Final index 1  (equal weighting)  
-
-02_Quality_of_services_received.do
+All scripts rely on **relative paths** defined in `00_setup.do`, ensuring full portability across operating systems and users.
 
 
-...
+## File Structure
+
+### 00_setup.do
+
+Environment initialization script.
+
+This file:
+
+- defines global paths (`DATA`, `OUT`, `CODE`)
+- ensures Stata is launched from the project root
+- prepares the working environment for the analysis
+
+This script must always be executed before running analytical scripts.
 
 
+### 00_master.do
 
-Technical Requirements
-Stata 17 or higher
-No external packages required
+Master execution script.
+
+This file:
+
+- calls `00_setup.do`
+- executes all analytical scripts in the correct order
+- reproduces the complete INQSP pipeline
+
+Recommended entry point for full replication:
+
+`do code/00_master.do`
+
+
+### 01_quality_transformation.do
+
+Computes **Dimension 1 – Quality of Public Service Transformation Initiatives**
+
+Sub-indices:
+
+- Sub-index 1: Existence of operational mechanisms
+- Sub-index 2: Appropriation of the “Fonctionnaire Nouveau” concept
+
+The dimension score is calculated using **equal weighting**.
+
+
+### 02_quality_services_received.do
+
+Computes **Dimension 2 – Quality of Services Received**
+
+Sub-indices include:
+
+- Assessment of service quality by civil society organizations
+- Assessment of service quality by users
+
+Indicators are aggregated to produce a composite score for service reception quality.
+
+
+### 03_quality_services_delivered.do
+
+Computes **Dimension 3 – Quality of Services Delivered by Public Service Delivery Points (PPSP)**
+
+This dimension is constructed using five sub-indices:
+
+- Working conditions of frontline staff
+- Physical work environment and resources
+- Information provided to users
+- Service continuity mechanisms
+- Staff–user interactions
+
+Each sub-index is aggregated using a **simple average**.
+
+
+### 04_quality_services_by_dm.do
+
+Computes **Dimension 4 – Perception of Public Service Quality by Decision-Makers**
+
+Indicators include:
+
+- Overall satisfaction
+- Observed changes in service delivery
+- Absence of structural challenges
+- Existence of monitoring mechanisms
+
+The dimension score is computed as a **simple composite index**.
+
+
+### 05_final_index.do
+
+Final aggregation script.
+
+This script:
+
+- imports dimension scores from previous outputs
+- computes the **National Public Service Quality Index (INQSP)**
+- exports the consolidated results table to Excel.
+
+
+## Pipeline Overview
+
+The INQSP pipeline follows the structure:
+
+Dimension 1 – Transformation initiatives  
+Dimension 2 – Quality of services received  
+Dimension 3 – Quality of services delivered  
+Dimension 4 – Decision-makers perception  
+↓  
+National Composite Index (INQSP)
+
+The final index is computed as:
+
+INQSP = (D1 + D2 + D3 + D4) / 4
+
+All dimensions receive **equal weights**.
+
+
+## Technical Requirements
+
+- Stata 17 or higher
+- No external Stata packages required
+- The code relies exclusively on built-in Stata commands
+
+
+## Reproducibility
+
+To reproduce the full pipeline:
+
+`do code/00_master.do`
+
+All results will be automatically generated in the **OUT** folder.
