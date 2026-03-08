@@ -45,7 +45,7 @@ timer on 1
 **************************************************************************************************/
 
 display "Running Dimension 1: Transformation initiatives"
-do "code/01_quality_transformation.do"
+do "code/01_Quality_of_transformation_initiatives.do"
 
 
 /**************************************************************************************************
@@ -53,7 +53,7 @@ do "code/01_quality_transformation.do"
 **************************************************************************************************/
 
 display "Running Dimension 2: Quality of services received"
-do "code/02_quality_services_received.do"
+do "code/02_Quality_of_services_received.do"
 
 
 /**************************************************************************************************
@@ -61,7 +61,7 @@ do "code/02_quality_services_received.do"
 **************************************************************************************************/
 
 display "Running Dimension 3: Services delivered by PPSP"
-do "code/03_quality_services_delivered.do"
+do "code/03_Quality_of_services_delivered.do"
 
 
 /**************************************************************************************************
@@ -69,7 +69,7 @@ do "code/03_quality_services_delivered.do"
 **************************************************************************************************/
 
 display "Running Dimension 4: Perception of decision-makers"
-do "code/04_quality_services_by_dm.do"
+do "code/04_Quality_of_services_by_dm.do"
 
 
 /**************************************************************************************************
@@ -91,3 +91,4 @@ display "--------------------------------------------"
 display "INQSP computation completed successfully"
 
 display "--------------------------------------------"
+
