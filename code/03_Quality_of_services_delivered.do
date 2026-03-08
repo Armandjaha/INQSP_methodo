@@ -483,7 +483,6 @@ rename c1 score
 order Label Code_question Question score
 replace score = score * 100
 
-export excel using "$OUT\indice_global_matrice_Harmean.xlsx", ///
+export excel using "$OUT\indice_global_matrice_Harmean.xlsx", sheet("INDICE 3") firstrow(variables) sheetmodify
 
-sheet("INDICE 3") firstrow(variables) sheetmodify
 
