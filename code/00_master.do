@@ -87,8 +87,9 @@ do "code/05_final_index.do"
 timer off 1
 timer list 1
 
-display "--------------------------------------------"
-display "INQSP computation completed successfully"
 
-display "--------------------------------------------"
+/**************************************************************************************************
+ INQSP computation completed successfully ... Congratulation ...
+**************************************************************************************************/
+
 
