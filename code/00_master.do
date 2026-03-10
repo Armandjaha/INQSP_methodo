@@ -2,7 +2,6 @@
  Project      : INQSP – Public Service Quality Index
  File         : 00_master.do
  Author       : Djaha Armand Kouakou, M.Sc.
- Institution  : ANStat
  Date         : August 2025
 
  Description
@@ -91,5 +90,6 @@ timer list 1
 /**************************************************************************************************
  INQSP computation completed successfully ... Congratulation ...
 **************************************************************************************************/
+
 
 
